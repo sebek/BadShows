@@ -86,7 +86,7 @@ $route->post('/shows/', function () use ($input, $validation, $response, $showsR
     $fields['start_time'] = date("H:i", strtotime($fields['start_time']));
     $fields['date'] = date("Y-m-d H:i:s");
 
-    
+
     if ($show = $showsRepository->create($fields)) {
         return $response->send($show, 200);
     }
