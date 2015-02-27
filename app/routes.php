@@ -21,7 +21,7 @@ $route = new Router('/index.php/');
 
 // Main view
 $route->get('/', function () use ($response) {
-    return $response->make("main");
+    return $response->make("Main");
 });
 
 // List shows
@@ -35,6 +35,7 @@ $route->get('/shows-xml', function () use ($response, $showsRepository) {
     $shows = $showsRepository->all();
     $data = [];
 
+    // Rebuild to match the desired XML-structure
     foreach ($shows as $show) {
         $data['program'][] = [
             'date' => $show['date'],
@@ -51,6 +52,7 @@ $route->get('/shows-xml', function () use ($response, $showsRepository) {
     $xmlBuilder->load($data);
     $xml = $xmlBuilder->createXML(true);
 
+    // Send it to the browser with extra headers
     $response->send($xml, 200, [['Content-type' => 'text/xml']]);
 });
 
@@ -84,6 +86,7 @@ $route->post('/shows/', function () use ($input, $validation, $response, $showsR
     $fields['start_time'] = date("H:i", strtotime($fields['start_time']));
     $fields['date'] = date("Y-m-d H:i:s");
 
+    
     if ($show = $showsRepository->create($fields)) {
         return $response->send($show, 200);
     }
@@ -98,5 +101,3 @@ $route->delete('/shows/*', function ($id) use ($response, $showsRepository) {
     }
     return $response->send("Could not find show with id {$id}", 404);
 });
-
-

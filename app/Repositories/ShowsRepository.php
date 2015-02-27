@@ -5,7 +5,7 @@ class ShowsRepository extends AbstractRepository
     protected $table = "shows";
 
     /**
-     * Find a cat by name
+     * Find a show by name
      *
      * @param $name
      * @return mixed
