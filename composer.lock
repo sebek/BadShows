@@ -1,0 +1,185 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "5e0f130c20d6ce858152b9f731234a58",
+    "packages": [
+        {
+            "name": "lichtner/fluentpdo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lichtner/fluentpdo.git",
+                "reference": "936bb5f66f5a2c3c8f7ac811aeb1bd94e40f440e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lichtner/fluentpdo/zipball/936bb5f66f5a2c3c8f7ac811aeb1bd94e40f440e",
+                "reference": "936bb5f66f5a2c3c8f7ac811aeb1bd94e40f440e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "FluentPDO/FluentPDO.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0",
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Lichtner",
+                    "homepage": "http://licht.sk/"
+                }
+            ],
+            "description": "FluentPDO is small PHP library for rapid query building. Killer feature is smart join builder which generates joins automatically.",
+            "homepage": "http://fluentpdo.com/",
+            "keywords": [
+                "database",
+                "dbal",
+                "pdo"
+            ],
+            "time": "2014-09-23 10:02:42"
+        },
+        {
+            "name": "respect/rest",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Respect/Rest.git",
+                "reference": "94862d39202747c4ce0128ceea8ebab20acdc48d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Respect/Rest/zipball/94862d39202747c4ce0128ceea8ebab20acdc48d",
+                "reference": "94862d39202747c4ce0128ceea8ebab20acdc48d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Respect\\Rest": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Style"
+            ],
+            "authors": [
+                {
+                    "name": "Henrique Moody",
+                    "email": "henriquemoody@gmail.com",
+                    "homepage": "http://about.me/henriquemoody"
+                },
+                {
+                    "name": "Alexandre Gaigalas",
+                    "email": "alexandre@gaigalas.net"
+                },
+                {
+                    "name": "kleberhs007",
+                    "email": "kleberhs007@yahoo.com"
+                },
+                {
+                    "name": "Leandro",
+                    "email": "lleitep3@gmail.com"
+                },
+                {
+                    "name": "Rogerio Prado de Jesus",
+                    "email": "rogeriopradoj@gmail.com"
+                },
+                {
+                    "name": "Anderson Casimiro",
+                    "email": "duodraco@gmail.com"
+                },
+                {
+                    "name": "Augusto Pascutti",
+                    "email": "augusto@phpsp.org.br"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com"
+                },
+                {
+                    "name": "eduardomarcate",
+                    "email": "eduardo@marcate.info"
+                },
+                {
+                    "name": "Nick Rawe",
+                    "email": "nickrawe2@gmail.com"
+                },
+                {
+                    "name": "Pablo Lacerda de Miranda",
+                    "email": "pablolmiranda@gmail.com"
+                },
+                {
+                    "name": "wesleyvicthor",
+                    "email": "w.v.mendes.s@gmail.com"
+                }
+            ],
+            "description": "Thin controller for RESTful applications",
+            "time": "2012-12-17 09:48:14"
+        },
+        {
+            "name": "thapp/xmlbuilder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iwyg/xmlbuilder.git",
+                "reference": "aa789be75ffa80557f94071445de196b9a0915a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iwyg/xmlbuilder/zipball/aa789be75ffa80557f94071445de196b9a0915a3",
+                "reference": "aa789be75ffa80557f94071445de196b9a0915a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.7"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Thapp": "src/"
+                },
+                "classmap": [
+                    "tests/"
+                ],
+                "files": [
+                    "src/includes/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "iwyg",
+                    "email": "mail@thomas-appel.com"
+                }
+            ],
+            "description": "Xmlbuilder utilitity",
+            "time": "2014-05-31 21:11:27"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "respect/rest": 20,
+        "lichtner/fluentpdo": 20,
+        "thapp/xmlbuilder": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,35 @@
+<form name="showForm" ng-submit="createShow()">
+    <div class="form-group">
+        <label for="name">Name of the bad show</label>
+        <input ng-model="show.name" type="text" class="form-control" id="name" placeholder="Enter the name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="start_time">Start time</label>
+        <input ng-model="show.start_time" type="time" class="form-control" id="start_time" placeholder="Enter start time" required>
+    </div>
+
+    <div class="form-group">
+        <label for="lead_text">Lead Text</label>
+        <textarea ng-model="show.lead_text" class="form-control" rows="3" name="lead_text" id="lead_text" placeholder="Write a lead text" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="bline">B-line</label>
+        <input ng-model="show.bline" type="text" class="form-control" id="bline" placeholder="Enter the B-line" required>
+    </div>
+
+    <div class="form-group">
+        <label for="synopsis">Synopsis</label>
+        <textarea ng-model="show.synopsis" class="form-control" rows="3" name="synopsis" id="synopsis" placeholder="Write a synopsis" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="url">URL</label>
+        <input ng-model="show.url" type="text" class="form-control" id="url" placeholder="Enter URL">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save this bad show</button>
+    <a href="#" ng-click="hideAdd()" class="btn btn-danger pull-right">... or forget about it</button>
+
+</form>

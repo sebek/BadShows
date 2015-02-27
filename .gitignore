@@ -1,2 +1,4 @@
 vendor/
 .idea
+badshows.sqlite3
+.DS_Store

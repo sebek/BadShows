@@ -1,0 +1,12 @@
+{
+  "require": {
+    "respect/rest": "dev-master",
+    "lichtner/fluentpdo": "dev-master",
+    "thapp/xmlbuilder": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "BadShows\\": "app/"
+    }
+  }
+}

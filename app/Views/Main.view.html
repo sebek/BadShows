@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="badShows">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BadShows</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="app/badShows.js"></script>
+
+</head>
+<body>
+
+
+<div ng-controller="MainController" class="container">
+    <h1>BadShows</h1>
+    <p class="lead">Super simple application for storing and retrieving bad shows.</p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-success" ng-click="showAdd()" ng-hide="addForm">Add a new bad show</button>
+            <a href="shows-xml" class="btn btn-default">Get XML</a>
+        </div>
+        <div class="col-md-12" ng-include="'views/input-form.html'" ng-show="addForm"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Name</th>
+                <th>Lead Text</th>
+                <th>B-line</th>
+                <th>Synopis</th>
+                <th>Radera</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="show in shows">
+                    <td>{{ show.date }}</td>
+                    <td>{{ show.start_time }}</td>
+                    <td>{{ show.name }}</td>
+                    <td>{{ show.lead_text }}</td>
+                    <td>{{ show.bline }}</td>
+                    <td>{{ show.synopsis }}</td>
+                    <td class="text-center"><i class="glyphicon glyphicon-trash" ng-click="deleteShow(show.id)"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
